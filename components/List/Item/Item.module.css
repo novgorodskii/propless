@@ -1,0 +1,47 @@
+.item {
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .icon {
+  display: flex;
+  align-items: center;
+}
+
+.header span {
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.header .price {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.main {
+  font-weight: 300;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .plan {
+  color: #828282;
+  margin-bottom: 8px;
+}
+
+.main .freePlace {
+  color: #4f4f4f;
+  margin-bottom: 8px;
+}
+
+.btn {
+  margin-top: 24px;
+}
