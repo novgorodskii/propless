@@ -1,20 +1,20 @@
 
 import styles from './List.module.css';
-import items from '../../api/list';
 import Item from './Item/Item';
 
-const List = () => {
-  return (
+const List = ({subs}) => {
+  console.log(subs, 'subs');
+  return ( subs.length > 0 ?
     <div className={styles.list}>
       {
-        items?.map(item => {
+        subs?.map(item => {
           return (
             <Item key={item.id} item={item}/>
           )
         })
       }
-    </div>
+    </div> : null
   )
 }
 
-export default List; 
+export default List;
