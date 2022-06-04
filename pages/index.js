@@ -22,6 +22,7 @@ export default function Home({subs}) {
 
 export async function getStaticProps() {
   const subsResponse = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/subscriptions`);
+  console.log(subsResponse, 'subsResponse');
   return {
     props: {
       subs: subsResponse

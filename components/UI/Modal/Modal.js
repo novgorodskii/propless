@@ -15,7 +15,7 @@ const Modal = ({close}) => {
     },
     body: JSON.stringify({
       data: {
-        customer_email: value,
+        email_consumer: value,
         order_id: 1
       },
     }),
